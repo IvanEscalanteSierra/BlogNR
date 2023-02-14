@@ -1,0 +1,124 @@
+#Logo {
+  height: 100px;
+  width: auto;
+  margin: auto;
+}
+
+#HeaderPadre {
+  background-color: black;
+}
+
+#Titulo {
+  color: white;
+}
+
+#Menu {
+  grid-row: 3;
+}
+
+#Divs {
+  display: flex;
+}
+
+#Derecha {
+  margin-left: 1%;
+}
+
+#Banner {
+  border: 2px solid black;
+}
+
+#Spam {
+  margin-top: 5%;
+  text-align: center;
+}
+
+#Pie {
+  display: flex;
+  margin-top: 5%;
+  background-color: black;
+}
+
+.Direccion {
+  color: white;
+  text-align: center;
+  margin-top: 2%;
+}
+
+li:hover,
+h1:hover {
+  color: gray;
+}
+
+#form {
+  width: 60%;
+  margin: auto;
+}
+
+.stats {
+  display: flex;
+}
+
+p {
+  margin: 5%;
+}
+
+.noVideo {
+  display: none;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  color: #f1f1f1;
+  width: 100%;
+  padding: 5px;
+  z-index: 100001;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 100000;
+}
+
+#myBtn {
+  position: fixed;
+  right: 1%;
+  top: 1%;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 80%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+h2 {
+  color: white;
+  font-weight: bolder;
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: initial;
+}
+
+.list-group-item {
+  background-color: black !important;
+  color: white !important;
+  border: none !important;
+}
+
+#Menu {
+  margin-bottom: 2%;
+}
+
+.colores{
+color: black;
+}

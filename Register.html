@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header class="col-12" id="HeaderPadre">
+        <!--Inicio de header, Nav y Breadcrumbs-->
+            <img src="Resources/Images/LOGO3_adobe_express.svg" alt="Logo" id="Logo" class="d-flex justify-content-start"/>
+            <h1 id="Titulo" class="text-center">Nexo Run</h1>
+          </header>
+
+ <nav class="navbar navbar-expand-lg bg-body-tertiary" id="Menu">
+   <div class="container-fluid">
+     <a id="Login" class="btn navbar-brand" data-bs-toggle="modal" data-bs-target="#ModalYouKnow">
+       Login
+     </a>
+     <button
+       class="navbar-toggler"
+       type="button"
+       data-bs-toggle="collapse"
+       data-bs-target="#navbarSupportedContent"
+       aria-controls="navbarSupportedContent"
+       aria-expanded="false"
+       aria-label="Toggle navigation"
+     >
+       <span class="navbar-toggler-icon"></span>
+     </button>
+     
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+         <li class="nav-item">
+           <a class="nav-link active" aria-current="page" href="Register.html"
+             >Registro</a
+           >
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#">Entradas</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="#"
+             ><i class="bi bi-body-text"></i> Crear nueva entrada
+           </a>
+         </li>
+
+         <li class="nav-item">
+          <div class="form-check form-switch">
+            <label class="form-check-label" for="lightSwitch"> Modo Noche </label>
+            <input class="form-check-input" type="checkbox" id="lightSwitch" />
+          </div>
+        </li>
+
+       </ul>
+       <form class="d-flex" role="search">
+         <input
+           class="form-control me-2"
+           type="search"
+           placeholder="Buscar"
+           aria-label="Search"
+         />
+         <button class="btn btn-outline-success" type="submit">
+           <i class="bi bi-search"></i>
+         </button>
+       </form>
+     </div>
+   </div>
+ </nav>
+
+ <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+   <ol class="breadcrumb">
+     <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+     <li class="breadcrumb-item active" aria-current="page" id="BC">Entradas</li>
+   </ol>
+ </nav>
+<!--Fin de header, Nav y Breadcrumbs-->
+
+<!--Inicio de formulario de registro-->
+    <form class="row g-3 needs-validation" novalidate id="form">
+        <fieldset>
+        <legend><b>Registro</b></legend>
+        <div class="input-group" aria-label="Datos solicitados">
+            <span class="input-group-text" aria-label="Nombre y Apellidos">Nombre y Apellidos:</span>
+            <input type="text" class="form-control" aria-label="Nombre" >
+            <input type="text" class="form-control" aria-label="Apellidos">
+        </div>
+        <br>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Correo electrónico:" aria-label="Correo electrónico">
+        </div>
+
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default" aria-label="Direccion">Dirección:</span>
+            <input type="text" class="form-control"
+                aria-describedby="inputGroup-sizing-default" aria-label="Direccion">
+        </div>
+
+
+
+        <div class="input-group input-group-sm mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-sm" aria-label="Comunidad Autónoma">Comunidad Autónoma:</span>
+            <select class="form-select" id="validationCustom04" required>
+      <option selected disabled value="">Elegir</option>
+      <option>Andalucía</option>
+      <option>Aragón</option>
+      <option>Islas Baleares</option>
+      <option>Canarias</option>
+      <option>Cantabria</option>
+      <option>Castilla La Mancha</option>
+      <option>Castilla y León</option>
+      <option>Comunidad de Madrid</option>
+      <option>Cataluña</option>
+      <option>Navarra</option>
+      <option>Comunidad Valenciana</option>
+      <option>Extremadura</option>
+      <option>Galicia</option>
+      <option>País Vasco</option>
+      <option>Asturias</option>
+      <option>Murcia</option>
+      <option>La rioja</option>
+
+
+    </select>
+        </div>
+
+        <div class="input-group input-group-sm mb-3">
+            <span class="input-group-text" aria-label="Provincia">Provincia:</span>
+            <input type="text" class="form-control"
+                aria-describedby="inputGroup-sizing-sm" aria-label="Provincia">
+        </div>
+
+        <div class="input-group input-group-sm mb-3">
+            <span class="input-group-text" aria-label="Ciudad">Ciudad:</span>
+            <input type="text" class="form-control"
+                aria-describedby="inputGroup-sizing-sm" aria-label="Ciudad">
+        </div>
+
+        <div class="input-group">
+            <span class="input-group-text" aria-label="Biografía breve">Biografía breve:</span>
+            <textarea class="form-control" aria-label="Biografía breve"></textarea>
+        </div>
+        <br>
+        <div class="input-group">
+            <span class="input-group-text" id="basic-addon3" aria-label="Instagram">https://instagram.com/</span>
+            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" aria-label="Instagram">
+        </div>
+        <div class="form-text" aria-label="No es necesario indicar Instagram">No es necesario indicarlo.</div>
+
+        <br>
+
+ <div class="col-12">
+    <button class="btn btn-primary" type="submit" aria-label="Enviar datos">Enviar datos</button>
+    <button class="btn btn-secondary" type="reset" aria-label="Cancelar envío">Cancelar <i class="bi bi-trash"></i></button>
+  </div>
+</fieldset>
+    </form>
+<!--Fin de formulario de registro-->
+
+
+    <!--Inicio del footer-->   
+    <footer class="col-12" id="Pie" aria-label="Pie de página">
+      <div class="col"><p class="Direccion" aria-label="Direccion"> Nuestra sede física se encuentra en:</p><br><p class="Direccion">C/ Sanatorio de Fuego Nº23</p></div>
+      <div class="col">
+        <ul class="list-group" aria-label="Puntos de interés">
+        <li class="list-group-item"><a class="btn navbar-brand" href="#" data-bs-toggle="modal"
+          data-bs-target="#ModalYouKnow">Login</a></li>
+        <li class="list-group-item"><a href="Register.html" id="link">Registro</a></li>
+        <li class="list-group-item"><a href="index.html">Entradas</a></li>
+        <li class="list-group-item">Añadir nueva entrada</li>
+      </ul>
+    </div>
+      <div class="col"><p class="Direccion" aria-label="Etiquetas">#Deporte#Running#Atletismo#Torneos<br>#Competición#Correr#Ejercicio</p></div>
+      <div class="col"><img class="img-fluid" src="Resources/Images/cc-by-nc-nd--300x104.png" alt="Derechos de autor"></div>
+    </footer>
+<!--Fin del footer-->
+
+
+
+<!--Inicio de modal para login-->
+    <div class="modal" tabindex="-1" id="ModalYouKnow">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Iniciar sesión</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!--Aquí van el cuerpo del modal-->
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1"><i class="bi bi-person"></i></span>
+                        <input type="text" class="form-control" placeholder="Usuario" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                    </div>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text"><i class="bi bi-key"></i></span>
+                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    </div>
+
+
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Recordar contraseña
+                        </label>
+                    </div>
+
+                    <div>
+                        <a href="index.html">¿Has olvidado la contraseña?</a>
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Continuar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fin de modal para login-->
+
+    <script src="light-switch-bootstrap/switch.js"></script>
+</body>
+
+</html>

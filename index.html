@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NexoRun</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="Padre" class="col-12">
+          <!--Inicio de vídeo, botón para cerrar BT y mensaje-->
+      <div id="presentacion">
+      <video autoplay muted loop id="myVideo">
+        <source src="Resources/Images/Background.mp4" type="video/mp4">
+    </video>
+    <div class="content">
+      <button class="btn-close" aria-label="Close" id="myBtn" onclick="eliminar()"></button>
+      <h2 id="h1">¡Corre con nosotros!</h2>
+  </div> 
+</div>
+    <!--Fin de vídeo, botón y mensaje-->
+
+      <header class="col-12" id="HeaderPadre">
+    <!--Inicio de header, Nav y Breadcrumbs-->
+        <img src="Resources/Images/LOGO3_adobe_express.svg" alt="Logo" id="Logo" class="d-flex justify-content-start"/>
+        <h1 id="Titulo" class="text-center">Nexo Run</h1>
+      </header>
+
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" id="Menu">
+        <div class="container-fluid">
+          <a id="Login" class="btn navbar-brand" data-bs-toggle="modal" data-bs-target="#ModalYouKnow" aria-label="Formulario de iniciar sesión">
+            Login
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Register.html"
+                  >Registro</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Entradas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="bi bi-body-text"></i> Crear nueva entrada
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <div class="form-check form-switch">
+                  <label class="form-check-label" for="lightSwitch"> Modo Noche </label>
+                  <input class="form-check-input" type="checkbox" id="lightSwitch" />
+                </div>
+              </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+          <li class="breadcrumb-item active" aria-current="page" id="BC">Entradas</li>
+        </ol>
+      </nav>
+    <!--Fin de header, Nav y Breadcrumbs-->
+
+<div id="Divs">
+      <!--Inicio de columna principal izq (Entradas)-->
+      <fieldset id="Izquierda" class="col-8">
+        <legend><b>Entradas recientes</b></legend>
+  
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card">
+              <img src="Resources/Images/girls-438152__340.jpg" class="card-img-top" alt="Chicas participantes del evento pasado">
+              <div class="card-body">
+                <div class="stats">
+                  <p aria-label="Número de visitas a la entrada"><i class="bi bi-eye"></i>2345</p>
+                  <p aria-label="Número de me gustas que tiene la entrada"><i class="bi bi-emoji-heart-eyes"></i>312</p>
+                </div>
+                <h5 class="card-title">Adidas Carity Event Jaen</h5>
+                <p class="card-text">Torneo benéfico patrocinado por Adidas.</p>
+              <div aria-label="Detalles de la entrada">
+                <p aria-label="Comentarios"><i class="bi bi-chat-right-text"></i> 76</p>
+                <p aria-label="Hastags"><b>#Adidas#Benéfico#Jaén</b></p>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="Resources/Images/istockphoto-658618490-170667a.jpg" class="card-img-top" alt="Ganador del torneo pasado">
+              <div class="card-body">
+                <div class="stats">
+                  <p aria-label="Número de visitas que tiene la entrada"><i class="bi bi-eye"></i>567</p>
+                  <p aria-label="Número de me gustas que tiene la entrada"><i class="bi bi-emoji-heart-eyes"></i>12</p>
+                </div>
+                <h5 class="card-title">Torneo Atletismo Ayamonte</h5>
+                <p class="card-text">Torneo anual del departamento de deporte de Ayamonte.</p>
+                <div aria-label="Detalles de la entrada">
+                  <p aria-label="Comentarios"><i class="bi bi-chat-right-text"></i> 26</p>
+                  <p aria-label="Hastags"><b>#Ayamonte#Torneo#Anual</b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="Resources/Images/man-g77c4acd3d_1920.jpg" class="card-img-top" alt="Ganador del torneo pasado">
+              <div class="card-body">
+                <div class="stats">
+                  <p aria-label="Número de visitas que tiene la entrada"><i class="bi bi-eye"></i>12345</p>
+                  <p aria-label="Número de me gustas que tiene la entrada"><i class="bi bi-emoji-heart-eyes"></i>1123</p>
+                </div>
+                <h5 class="card-title">Torneo Atletismo Bormujos</h5>
+                <p class="card-text">Torneo anual del departamento de deporte de Ayamonte.</p>
+                <div aria-label="Detalles de la entrada">
+                  <p class="col" aria-label="Comentarios"><i class="bi bi-chat-right-text"></i> 376</p>
+                  <p class="col" aria-label="Hastags"><b>#Bormujos#Torneo#Anual</b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="Resources/Images/woman-g0b7ca8601_1920.jpg" class="card-img-top" alt="Modelo de la campaña de Nike">
+              <div class="card-body">
+                <div class="stats">
+                  <p aria-label="Número de visitas que tiene la entrada"><i class="bi bi-eye"></i>23</p>
+                  <p aria-label="Número de me gustas que tiene la entrada"><i class="bi bi-emoji-heart-eyes"></i>6</p>
+                </div>
+                <h5 class="card-title">Campaña publicitaria Nike Cadiz</h5>
+                <p class="card-text">Torneo publicitario patrocinado por Adidas para promocionar sus nuevas zapatillas.</p>
+                <div aria-label="Detalles de la entrada">
+                  <p class="col" aria-label="Comentarios"><i class="bi bi-chat-right-text"></i> 13</p>
+                  <p class="col" aria-label="Hastags"><b>#Nike#Patrocinador#Cádiz</b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+<!--Fin de entradas-->
+
+<!--Inicio de columna secundaria derecha-->
+      <div id="Derecha" class="col-4">
+        <fieldset>
+          <img src="Resources/Images/Banner.png" class="img-fluid" id="Banner" alt="Anuncio de promoción BlackFriday">
+        </fieldset>
+        
+        <fieldset>
+          <legend> <b>¡Visítanos en Redes Sociales!</b></legend> 
+          <br><div id="Spam" aria-label="Redes sociales">
+          <i class="bi bi-youtube" aria-label="Youtube"></i><i class="bi bi-instagram" aria-label="Instagram"></i><i class="bi bi-twitch" aria-label="Tuich"></i><i class="bi bi-twitter" aria-label="Tuiter"></i><i class="bi bi-facebook" aria-label="Feisbuk"></i>
+        </div>
+        </fieldset>
+
+          <fieldset id="carouselExampleCaptions" class="carousel slide" aria-label="Entradas recientes">
+            <legend><b>Más entradas</b></legend>
+            <div class="carousel-indicators" aria-label="Entradas recientes">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Resources/Images/girls-438152__340.jpg" class="d-block w-100" alt="Chicas participantes del evento pasado">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Adidas Carity Event</h5>
+                  <p>Torneo benéfico patrocinado por Adidas.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Resources/Images/istockphoto-658618490-170667a.jpg" class="d-block w-100" alt="Ganador del torneo pasado">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Torneo Atletismo Ayamonte</h5>
+                  <p>Torneo anual del departamento de deporte de Ayamonte.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Resources/Images/man-g77c4acd3d_1920.jpg" class="d-block w-100" alt="Ganador del torneo pasado">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Torneo Atletismo Bormujos</h5>
+                  <p>Torneo anual del departamento de deporte de Bormujos.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="Resources/Images/woman-g0b7ca8601_1920.jpg" class="d-block w-100" alt="Modelo de la camapaña de Nike">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Torneo publicitario Nike</h5>
+                  <p>Torneo publicitario patrocinado por Adidas para promocionar sus nuevas zapatillas.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </fieldset>
+      </div>
+    </div>
+    <!--Final de columna secundaria derecha-->
+
+    <!--Inicio del footer-->   
+    <footer class="col-12" id="Pie" aria-label="Pie de página">
+        <div class="col"><p class="Direccion" aria-label="Direccion"> Nuestra sede física se encuentra en:</p><br><p class="Direccion">C/ Sanatorio de Fuego Nº23</p></div>
+        <div class="col">
+          <ul class="list-group" aria-label="Puntos de interés">
+          <li class="list-group-item"><a class="btn navbar-brand" href="#" data-bs-toggle="modal"
+            data-bs-target="#ModalYouKnow">Login</a></li>
+          <li class="list-group-item"><a href="Register.html" id="link">Registro</a></li>
+          <li class="list-group-item"><a href="index.html">Entradas</a></li>
+          <li class="list-group-item">Añadir nueva entrada</li>
+        </ul>
+      </div>
+        <div class="col"><p class="Direccion" aria-label="Etiquetas">#Deporte#Running#Atletismo#Torneos<br>#Competición#Correr#Ejercicio</p></div>
+        <div class="col"><img class="img-fluid" src="Resources/Images/cc-by-nc-nd--300x104.png" alt="Derechos de autor"></div>
+      </footer>
+<!--Fin del footer-->
+
+
+
+      <div class="modal" tabindex="-1" id="ModalYouKnow" aria-label="Formulario de iniciar sesión">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Iniciar sesión</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!--Aquí van el cuerpo del modal-->
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"><i class="bi bi-person"></i></span>
+                <input type="text" class="form-control" placeholder="Usuario" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+
+              <div class="input-group mb-3">
+                <span class="input-group-text"><i class="bi bi-key"></i></span>
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">  
+              </div>
+
+
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                  Recordar contraseña
+                </label>
+              </div>
+
+              <div>
+                <a href="index.html">¿Has olvidado la contraseña?</a>
+              </div>
+              
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Continuar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <script>
+        
+      let video = document.getElementById("myVideo");
+      let btn = document.getElementById("myBtn");
+      let h2 = document.getElementById("h1");
+      
+      function eliminar() {
+          video.className = "noVideo";
+          btn.className = "noVideo";
+          h2.className = "noVideo";
+      }
+      
+  </script>
+
+<script src="light-switch-bootstrap/switch.js"></script>
+
+  </body>
+</html>

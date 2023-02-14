@@ -27,7 +27,7 @@
         <source src="Resources/Images/Background.mp4" type="video/mp4">
     </video>
     <div class="content">
-      <button class="btn-close" aria-label="Close" id="myBtn" onclick="eliminar()"></button>
+      <button class="btn-close" aria-label="Close" role="navigation" id="myBtn" onclick="eliminar()"></button>
       <h2 id="h1">¡Corre con nosotros!</h2>
   </div> 
 </div>
@@ -41,7 +41,7 @@
 
       <nav class="navbar navbar-expand-lg bg-body-tertiary" id="Menu">
         <div class="container-fluid">
-          <a id="Login" class="btn navbar-brand" data-bs-toggle="modal" data-bs-target="#ModalYouKnow" aria-label="Log In">
+          <a id="Login" class="btn navbar-brand" data-bs-toggle="modal" data-bs-target="#ModalYouKnow" role="button" aria-label="Log In">
             Login
           </a>
           <button
@@ -51,6 +51,7 @@
             data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
+            role="button"
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
@@ -73,9 +74,9 @@
               </li>
 
               <li class="nav-item">
-                <div class="form-check form-switch" aria-label="Contraste">
+                <div class="form-check form-switch" aria-label="Contraste" role="complementary">
                   <label class="form-check-label" for="Interruptor"> Modo Noche </label>
-                  <input class="form-check-input" type="checkbox" id="Interruptor" aria-label="Interruptor"/>
+                  <input class="form-check-input" type="checkbox" id="Interruptor" role="button" aria-label="Interruptor"/>
                 </div>
               </li>
 
@@ -85,9 +86,10 @@
                 class="form-control me-2"
                 type="search"
                 placeholder="Buscar"
+                role="button"
                 aria-label="Botón de buscar"
               />
-              <button class="btn btn-outline-success" type="submit" aria-label="Botón de buscar">
+              <button class="btn btn-outline-success" type="submit" role="button" aria-label="Botón de buscar">
                 <i class="bi bi-search"></i>
               </button>
             </form>
@@ -114,14 +116,14 @@
               <img src="Resources/Images/girls-438152__340.jpg" class="card-img-top" alt="Chicas participantes del evento pasado">
               <div class="card-body">
                 <div class="stats">
-                  <p aria-label="Número de visitas a la entrada"><i class="bi bi-eye"></i>2345</p>
-                  <p aria-label="Número de me gustas que tiene la entrada"><i class="bi bi-emoji-heart-eyes"></i>312</p>
+                  <p aria-label="Número de visitas a la entrada" role="note"><i class="bi bi-eye"></i>2345</p>
+                  <p aria-label="Número de me gustas que tiene la entrada" role="note"><i class="bi bi-emoji-heart-eyes"></i>312</p>
                 </div>
                 <h5 class="card-title">Adidas Carity Event Jaen</h5>
                 <p class="card-text">Torneo benéfico patrocinado por Adidas.</p>
-              <div aria-label="Detalles de la entrada">
-                <p aria-label="Comentarios"><i class="bi bi-chat-right-text"></i> 76</p>
-                <p aria-label="Hastags"><b>#Adidas#Benéfico#Jaén</b></p>
+              <div aria-label="Detalles de la entrada" role="note">
+                <p aria-label="Comentarios" role="note"><i class="bi bi-chat-right-text"></i> 76</p>
+                <p aria-label="Hastags" role="note"><b>#Adidas#Benéfico#Jaén</b></p>
               </div>
               </div>
             </div>

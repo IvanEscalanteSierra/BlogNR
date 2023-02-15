@@ -3,7 +3,7 @@
  */
 
 (function () {
-  let lightSwitch = document.getElementById('lightSwitch');
+  let lightSwitch = document.getElementById('Interruptor');
   if (!lightSwitch) {
     return;
   }

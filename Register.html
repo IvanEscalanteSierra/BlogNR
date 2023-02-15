@@ -19,74 +19,74 @@
 
 <body>
     <header class="col-12" id="HeaderPadre">
-        <!--Inicio de header, Nav y Breadcrumbs-->
-            <img src="Resources/Images/LOGO3_adobe_express.svg" alt="Logo" id="Logo" class="d-flex justify-content-start"/>
-            <h1 id="Titulo" class="text-center">Nexo Run</h1>
-          </header>
+     <!--Inicio de header, Nav y Breadcrumbs-->
+     <img src="Resources/Images/LOGO3_adobe_express.svg" alt="Logo" id="Logo" class="d-flex justify-content-start"/>
+     <h1 id="Titulo" class="text-center">Nexo Run</h1>
+   </header>
 
- <nav class="navbar navbar-expand-lg bg-body-tertiary" id="Menu">
-   <div class="container-fluid">
-     <a id="Login" class="btn navbar-brand" data-bs-toggle="modal" data-bs-target="#ModalYouKnow">
-       Login
-     </a>
-     <button
-       class="navbar-toggler"
-       type="button"
-       data-bs-toggle="collapse"
-       data-bs-target="#navbarSupportedContent"
-       aria-controls="navbarSupportedContent"
-       aria-expanded="false"
-       aria-label="Toggle navigation"
-     >
-       <span class="navbar-toggler-icon"></span>
-     </button>
-     
-     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-         <li class="nav-item">
-           <a class="nav-link active" aria-current="page" href="Register.html"
-             >Registro</a
-           >
-         </li>
-         <li class="nav-item">
-           <a class="nav-link" href="#">Entradas</a>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link" href="#"
-             ><i class="bi bi-body-text"></i> Crear nueva entrada
-           </a>
-         </li>
+   <nav class="navbar navbar-expand-lg bg-body-tertiary" id="Menu">
+     <div class="container-fluid">
+       <a id="Login" class="btn navbar-brand" data-bs-toggle="modal" data-bs-target="#ModalYouKnow" role="button" aria-label="Log In">
+         Login
+       </a>
+       <button
+         class="navbar-toggler"
+         type="button"
+         data-bs-toggle="collapse"
+         data-bs-target="#navbarSupportedContent"
+         aria-controls="navbarSupportedContent"
+         aria-expanded="false"
+         aria-label="Toggle navigation"
+       >
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+           <li class="nav-item">
+             <a class="nav-link active" aria-current="page" href="Register.html"
+               >Registro</a
+             >
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#">Entradas</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#"
+               ><i class="bi bi-body-text"></i> Crear nueva entrada
+             </a>
+           </li>
 
-         <li class="nav-item">
-          <div class="form-check form-switch">
-            <label class="form-check-label" for="lightSwitch"> Modo Noche </label>
-            <input class="form-check-input" type="checkbox" id="lightSwitch" />
-          </div>
-        </li>
+           <li class="nav-item">
+             <div class="form-check form-switch" aria-label="Contraste" role="note">
+               <label class="form-check-label" for="Interruptor"> Modo Noche </label>
+               <input class="form-check-input" type="checkbox" id="Interruptor" aria-label="Interruptor"/>
+             </div>
+           </li>
 
-       </ul>
-       <form class="d-flex" role="search">
-         <input
-           class="form-control me-2"
-           type="search"
-           placeholder="Buscar"
-           aria-label="Search"
-         />
-         <button class="btn btn-outline-success" type="submit">
-           <i class="bi bi-search"></i>
-         </button>
-       </form>
+         </ul>
+         <form class="d-flex" role="search">
+           <input
+             class="form-control me-2"
+             type="search"
+             placeholder="Buscar"
+             aria-label="Botón de buscar"
+           />
+           <button class="btn btn-outline-success" type="submit" aria-label="Botón de buscar">
+             <i class="bi bi-search"></i>
+           </button>
+         </form>
+       </div>
      </div>
-   </div>
- </nav>
+   </nav>
 
- <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
-   <ol class="breadcrumb">
-     <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
-     <li class="breadcrumb-item active" aria-current="page" id="BC">Entradas</li>
-   </ol>
- </nav>
-<!--Fin de header, Nav y Breadcrumbs-->
+   <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="Páginas anteriores">
+     <ol class="breadcrumb">
+       <li class="breadcrumb-item"><a href="#">Inicio</a></li>
+       <li class="breadcrumb-item active" aria-current="page" id="BC">Entradas</li>
+     </ol>
+   </nav>
+ <!--Fin de header, Nav y Breadcrumbs-->
 
 <!--Inicio de formulario de registro-->
     <form class="row g-3 needs-validation" novalidate id="form">
